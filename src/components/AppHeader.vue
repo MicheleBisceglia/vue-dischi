@@ -13,7 +13,7 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 header {
-  height: 80px;
+  height: 60px;
   background-color: $secondary-color;
 }
 </style>
