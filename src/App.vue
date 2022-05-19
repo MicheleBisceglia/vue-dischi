@@ -1,16 +1,23 @@
 <template>
-  <div class="text-primary" id="app">
-    <HelloWorld />
+  <div id="app">
+    <body>
+      <AppHeader />
+      <main>
+        <AppAlbumList />
+      </main>
+    </body>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppHeader from "./components/AppHeader.vue";
+import AppAlbumList from "./components/AppAlbumList.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    AppHeader,
+    AppAlbumList,
   },
 };
 </script>
