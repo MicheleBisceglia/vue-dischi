@@ -23,6 +23,7 @@ export default {
 @import "../style/common.scss";
 .ms_card {
   width: calc(100% / 7);
+  min-width: 100px;
   margin: 20px;
   background-color: $secondary-color;
   text-align: center;

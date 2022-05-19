@@ -1,7 +1,7 @@
 <template>
   <div class="ms_container">
     <div class="container">
-        <div class="row row-cols-3 row-col-md-5 gy-2">
+        <div class="row row-cols-3 row-col-md-5 row-col-sd-3 gy-2">
             <AppAlbumCard v-for="item in cards" :key="item.index" :card="item" />
         </div>
       
