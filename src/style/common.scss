@@ -8,3 +8,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: $primary-color;
 }
+img {
+    max-width: 80%;
+    margin-top:1rem;
+}
+.album-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 80%;
+    display: block;
+    margin: .5rem .4rem;
+}
+.album-text {
+    color: gray;
+    font-size: 70%;
+    display: block;
+}

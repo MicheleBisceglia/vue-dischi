@@ -22,5 +22,6 @@ export default {
     width: 70%;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 </style>
