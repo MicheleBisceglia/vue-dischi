@@ -1,9 +1,9 @@
 <template>
   <div class="ms_container">
-    <AppSelect @selectClick="filterCards($event)"/>
+    <AppSelect @selectClick="saveGenre($event)"/>
     <div class="container">
       <div class="row row-cols-3 row-col-md-5 row-col-sd-3 gy-2">
-        <AppAlbumCard v-for="item in cards" :key="item.index" :card="item" />
+        <AppAlbumCard v-for="item in filterCards()" :key="item.index" :card="item" />
       </div>
     </div>
   </div>
@@ -23,6 +23,7 @@ export default {
   data: function () {
     return {
       cards: [],
+      select: ""
     };
   },
   created() {
@@ -33,11 +34,14 @@ export default {
       });
   },
   methods: {
-    filterCards: function(selectKey) {
+    saveGenre: function(selectKey) {
+      this.select = selectKey;
+    },
+    filterCards: function() {
     const filteredCards = this.cards.filter( item => {
-      return item.genre.includes(selectKey)
+      return item.genre.includes(this.select)
     });
-    console.log(filteredCards);
+    return filteredCards;
     }
   }
 };
