@@ -33,8 +33,11 @@ export default {
       });
   },
   methods: {
-    filterCards: function(searchKey) {
-    console.log(searchKey);
+    filterCards: function(selectKey) {
+    const filteredCards = this.cards.filter( item => {
+      return item.genre.includes(selectKey)
+    });
+    console.log(filteredCards);
     }
   }
 };
