@@ -1,10 +1,15 @@
 <template>
   <div class="ms_container">
+    <select name="" id="">
+      <option value="">Rock</option>
+      <option value="">Pop</option>
+      <option value="">Jazz</option>
+      <option value="">Metal</option>
+    </select>
     <div class="container">
-        <div class="row row-cols-3 row-col-md-5 row-col-sd-3 gy-2">
-            <AppAlbumCard v-for="item in cards" :key="item.index" :card="item" />
-        </div>
-      
+      <div class="row row-cols-3 row-col-md-5 row-col-sd-3 gy-2">
+        <AppAlbumCard v-for="item in cards" :key="item.index" :card="item" />
+      </div>
     </div>
   </div>
 </template>

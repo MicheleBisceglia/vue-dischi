@@ -1,11 +1,11 @@
 <template>
   <div class="ms_card">
-      <div>
-        <img :src="card.poster" alt="" />
-        <strong class="album-title">{{ card.title }}</strong>
-        <small class="album-text">{{ card.author }}</small>
-        <small class="album-text">{{ card.year }}</small>
-      </div>
+    <div>
+      <img :src="card.poster" alt="" />
+      <strong class="album-title">{{ card.title }}</strong>
+      <small class="album-text">{{ card.author }}</small>
+      <small class="album-text">{{ card.year }}</small>
+    </div>
   </div>
 </template>
 

@@ -2,9 +2,8 @@
   <div>
     <header>
       <div class="ms_logo">
-        <img src="../assets/logo-small.svg" alt="">
+        <img src="../assets/logo-small.svg" alt="" />
       </div>
-      
     </header>
   </div>
 </template>
