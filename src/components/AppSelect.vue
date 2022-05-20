@@ -1,16 +1,19 @@
 <template>
-<select name="" id="">
-      <option value="">Rock</option>
-      <option value="">Pop</option>
-      <option value="">Jazz</option>
-      <option value="">Metal</option>
+<select @change="$emit('selectClick',albumSelect)" name="genere" v-model="albumSelect" id="">
+      <option value="rock">Rock</option>
+      <option value="pop">Pop</option>
+      <option value="jazz">Jazz</option>
+      <option value="metal">Metal</option>
     </select>
 </template>
 
 <script>
 export default {
   name: "AppSelect",
-  components: {
+  data: function() {
+      return {
+          albumSelect: ''
+      }
   },
 };
 </script>

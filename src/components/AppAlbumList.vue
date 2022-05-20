@@ -1,6 +1,6 @@
 <template>
   <div class="ms_container">
-    <AppSelect />
+    <AppSelect @selectClick="filterCards($event)"/>
     <div class="container">
       <div class="row row-cols-3 row-col-md-5 row-col-sd-3 gy-2">
         <AppAlbumCard v-for="item in cards" :key="item.index" :card="item" />
@@ -32,6 +32,11 @@ export default {
         this.cards = resp.data.response;
       });
   },
+  methods: {
+    filterCards: function(searchKey) {
+    console.log(searchKey);
+    }
+  }
 };
 </script>
 
